@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title>SimpleNotes</title>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet"/>
+   </head>
+   <body>
+      <h1>SimpleNotes</h1>
+      <div id="auth">
+         <label class="auth">Login:</label>
+         <input class="auth" type="text" id="login">
+         <label class="auth">Password:</label>
+         <input class="auth" type="text" id="password">
+         <input class="auth" type="submit" onclick="makeAuth(this)" value="Login">
+      </div>
+      <div id="reg">
+         <label class="reg">Login:</label>
+         <input class="reg" type="text" id="login_reg">
+         <label class="reg">Password:</label>
+         <input class="reg" type="text" id="password_reg">
+         <input class="reg" type="submit" onclick="makeAuth(this)" value="Register">
+      </div>
+
+      <div id="root">
+        <!-- Модальные окна -->
+        <div id="modal_windows"></div>
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlay js-overlay-modal"></div>
+      </div>
+
+      <script src="scripts.js"></script>
+   </body>
+</html>
